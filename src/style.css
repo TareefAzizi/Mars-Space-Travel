@@ -395,7 +395,8 @@ font-family: 'Exo', sans-serif;
   }
   
   .main-card-body{
-    color: rgb(255 255 255/0.9);
+    font-family: 'Exo', sans-serif;
+    color: white;
   }
   
   @media (hover){

@@ -23,7 +23,7 @@
     <button class="mobile-nav-toggle" aria-controls="primary-navigation"><span class="sr-only"
         aria-expanded="false">Menu</span></button>
     <nav>
-      <ul  data-visible="false" class="primary-navigation flex">
+      <ul id="primary-navigation"  data-visible="false" class="primary-navigation flex">
         <li><a class=" " href="#HomePage"><span
               aria-hidden="true">01.</span>Home</a></li>
         <li><a class="" href="#main"><span
@@ -119,7 +119,7 @@ A Martian day (referred to as “sol”) is therefore approximately 40 minutes l
               <div class="main-card col-lg" style="background-image: url(./textures/mars1.jpeg);" >
                 <div class="main-card-content ">
                 <h2 class="main-card-title ">End isolation</h2>
-                <p class="main-card-body">One of the most frequently heard arguments these days is that of extraterrestrial life. This is because we feel so lonely out here in our solar system that curiosity pushes us to want to discover any neighbours that might be out there!
+                <p class="main-card-body">One of the most frequently heard arguments these days is that of extraterrestrial life. This is because we feel so lonely out here in our solar system that curiosity pushes us to want to discover any neighbours that might be out there. Looking new extraterrestrial life would be life changing for everyone.
                 </p>
                   <a href="" class="button">Learn More</a>
                 </div>
@@ -284,7 +284,8 @@ A Martian day (referred to as “sol”) is therefore approximately 40 minutes l
   let tl = gsap.timeline({defaults: {ease: "power4.inOut", duration: 2}})
         let flagPoles = CSSRulePlugin.getRule(".card:before");
 
-        tl.to('h1', { 'clip-path': 'polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)', opacity: 1, y: 0, duration: 1.5})
+        tl.to('h1', { 'clip-path': 'polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)', opacity: 1, y: 0, duration: 2.25})
+
 </script>
 <script>
   const updateProperties = (elem, state) => {
@@ -339,4 +340,5 @@ document.querySelectorAll('.cursor').forEach(cursor => {
 })
 
 </script>
+
 </html>

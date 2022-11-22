@@ -652,3 +652,20 @@ function hideContent(parent, content) {
 function showContent(parent, content) {
   parent.querySelector(content).removeAttribute("hidden");
 }
+
+// nav
+const mobileNavToggle = document.querySelector(".mobile-nav-toggle");
+const primaryNavigation = document.querySelector(".primary-navigation");
+
+mobileNavToggle.addEventListener("click", () => {
+  const visibility = primaryNavigation.getAttribute("data-visible");
+
+  if (visibility === "true") {
+    primaryNavigation.setAttribute("data-visible", true);
+    mobileNavToggle.setAttribute("aria-expanded", true);
+  } else {
+    primaryNavigation.setAttribute("data-visible", false);
+    mobileNavToggle.setAttribute("aria-expanded", false);
+  }
+})
+
