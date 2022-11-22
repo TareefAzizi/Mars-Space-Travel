@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bellefair&family=Dosis&family=Exo&display=swap" rel="stylesheet">
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>ThreeJS Starter</title>
+</head>
+<body>
+
+<body >
+  <header class="primary-header flex">
+    <div>
+      <img src="/img/share.jpeg" alt="space tourism logo" class="logo">
+    </div>
+    <button class="mobile-nav-toggle" aria-controls="primary-navigation"><span class="sr-only"
+        aria-expanded="false">Menu</span></button>
+    <nav>
+      <ul  data-visible="false" class="primary-navigation flex">
+        <li><a class=" " href="#HomePage"><span
+              aria-hidden="true">01.</span>Home</a></li>
+        <li><a class="" href="#main"><span
+              aria-hidden="true">02.</span>Destination</a></li>
+        <li><a class=" " href="#Benefits"><span
+              aria-hidden="true">03.</span>Benefits</a></li>
+        <li><a class=" " href="#Technology"><span
+              aria-hidden="true">04.</span>Technology</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<section>
+  <div id="HomePage">
+    <div class="first-main-text">
+        <h1>Feel the Future</h1>
+    </div>
+    <canvas class="webgl"></canvas>
+  </div>
+  </section>
+
+            <section id="main" class=" about-us grid-container grid-container--technology flow">
+                <h1 class="about-us-text">
+                  <span aria-hidden="true"></span>
+                  02. About Us
+                </h1>
+            
+                <div class="number-indicators flex" role="tablist">
+                  <button class="number-indicator   bg-dark" aria-selected="true" aria-controls="vehicale-tab" role="tab" data-image="vehicale-image" tabindex="0">1</button>
+                  <button class="number-indicator   bg-dark" aria-selected="false" aria-controls="spaceport-tab" role="tab" data-image="spaceport-image" tabindex="-1">2</button>
+                  <button class="number-indicator   bg-dark" aria-selected="false" aria-controls="spacecapsule-tab" role="tab" data-image="spacecapsule-image" tabindex="-1">3</button>
+                </div>
+            
+                <article class="technology-details flow" id="vehicale-tab" role="tabpanel" tabindex="0">
+                  <header class="flow flow--space-small">
+                    <h2 class="about-us-main-text">You Might be Asking</h2>
+                    <p class="about-us-title">Why go to Mars?</p>
+                  </header>
+                  <p class="about-us-content">
+                    Mars is an obvious target for exploration because it is close by in our Solar System, but there are many more reasons to explore the Red Planet. The scientific reasons for going to Mars can be summarised by the search for life, understanding the surface and the planet’s evolution, and preparing for future human exploration.
+                    Understanding whether life existed elsewhere in the Universe beyond Earth is a fundamental question of humankind. Mars is an excellent place to investigate this question because it is the most similar planet to Earth in the Solar System. Evidence suggests that Mars was once full of water, warmer and had a thicker atmosphere, offering a potentially habitable environment.
+                  </p>
+                </article>
+            
+                <article hidden class="technology-details flow" id="spaceport-tab" role="tabpanel" tabindex="0">
+                  <header class="flow flow--space-small">
+                    <h2 class="about-us-main-text">Longer Time?</h2>
+                    <p class="about-us-title">Time is longer on Mars</p>
+                  </header>
+                  <p class="about-us-content">
+                    Mars is a planet with a very similar daily cycle to the Earth.
+Its 'sidereal' day is 24 hours, 37 minutes and 22 seconds, and its solar day 24 hours, 39 minutes and 35 seconds.
+A Martian day (referred to as “sol”) is therefore approximately 40 minutes longer than a day on Earth.
+
+
+                  </p>
+                </article>
+            
+                <article hidden class="technology-details flow" id="spacecapsule-tab" role="tabpanel" tabindex="0">
+                  <header class="flow flow--space-small">
+                    <h2 class="about-us-main-text">Is it Livable?</h2>
+                    <p class="about-us-title">Water on Mars</p>
+                  </header>
+                  <p class="about-us-content">
+                    most all water on Mars today exists as ice, though it also exists in small quantities as vapor in the atmosphere.
+                     What was thought to be low-volume liquid brines in shallow Martian soil, also called recurrent slope lineae,
+                     may be grains of flowing sand and dust slipping downhill to make dark streaks.
+                     The only place where water ice is visible at the surface is at the north polar ice cap.
+                      Abundant water ice is also present beneath the permanent carbon dioxide ice cap at the Martian south pole and in the shallow subsurface at more temperate conditions.
+                  </p>
+                </article>
+            
+                <picture id="vehicale-image">
+                  <img src="/img/marsabout4.jpeg" class="technology-mobile-image"  />
+                  <img src="/img/marsabout4.jpeg" class="technology-desktop-image"  />
+                </picture>
+            
+                <picture hidden id="spaceport-image">
+                    <img src="/img/marsabout2.jpeg" class="technology-mobile-image"  />
+                    <img src="/img/marsabout2.jpeg" class="technology-desktop-image"  />
+                </picture>
+            
+                <picture hidden id="spacecapsule-image">
+                    <img src="/img/marsabout3.jpeg" class="technology-mobile-image"  />
+                    <img src="/img/marsabout3.jpeg" class="technology-desktop-image"  />
+                </picture>
+              </section>
+
+              <section class="skills-section" id="Benefits">
+                <div class="container">
+                <h4  class="about-us-text" style="margin-bottom: 40px;">03. Why Should we go to Mars?</h4>
+                <div class="row three-cards">
+              <div class="main-card col-lg" style="background-image: url(./textures/mars1.jpeg);" >
+                <div class="main-card-content ">
+                <h2 class="main-card-title ">End isolation</h2>
+                <p class="main-card-body">One of the most frequently heard arguments these days is that of extraterrestrial life. This is because we feel so lonely out here in our solar system that curiosity pushes us to want to discover any neighbours that might be out there!
+                </p>
+                  <a href="" class="button">Learn More</a>
+                </div>
+              </div>
+      
+              <div class="main-card col-lg  middle-card" style="background-image: url(./textures/mars2.jpeg);">
+                <div class="main-card-content">
+                <h2 class="main-card-title">Earth’s future</h2>
+                <p class="main-card-body">Right now we truly only know one planet and that is Earth. We think we know what the past was like here and we also attempt to predict its future. In a way, we already do this but science needs examples, as many as possible, and we have only been able to study one in depth—ours.
+                </p>
+                  <a href="" class="button">Learn More</a>
+                </div>
+              </div>
+      
+              <div class="main-card col-lg" style="background-image: url(./textures/mars3.jpeg);">
+                <div class="main-card-content">
+                <h2 class="main-card-title">Revolution</h2>
+                <p class="main-card-body">It is often said that space exploration is a highly profitable investment because, despite its cost, it has driven the development of so many revolutionary technologies that have altered the way we live life.It is this transfer of technology that has brought us solar panels,etc.</p>
+                  <a href="" class="button">Learn More</a>
+                </div>
+              </div>
+      
+              </div>
+            </div>
+          </div>
+            </section>
+
+        
+
+
+
+      <section class="fourth-section grid" id="grid" >
+          <div class="title title--primary">
+            <span class="text-light">Future Housing Of</span>
+            <span class="big-text">Mars</span>
+          </div>
+      
+          <div class="cover">
+            <a
+               target="_blank"
+               rel="noopener noreferrer"
+               >
+              <img
+                  src="/img/marshome.webp"
+                   />
+            </a>
+          </div>
+
+          <div class="title title--secondary">
+            <span class="text-light">Look Towards The</span>
+            <span class="big-text">Future</span>
+          </div>
+      </section>
+
+      <section class="grid-section" id="Technology">
+        <div class="wrapper">
+          <header class="header"><h1><span class="text-red">04.</span> Technologies on Mars</h1></header>
+          <figure class="featured-image-1">
+              <img src="/img/aeroshell.jpeg" alt="aeroshell">
+           </figure>
+          
+          <article class="article article-1">
+            <h2>Aeroshell</h2>
+            <p>The aeroshell forms a protective covering during the seven month voyage to Mars. The aeroshell, together with the lander and the rover, constitute what engineers call the "entry vehicle."</p>
+          </article>
+          <figure class="featured-image-2">
+              <img src="/img/marshelicopter.jpeg" alt="mars helicopter">
+           </figure>
+          
+          <article class="article article-2">
+            <h2>Mars helicopter</h2>
+            <p>A technology demonstration to test the first powered flight on Mars. The helicopter rode to Mars attached to the belly of the Perseverance rover.</p>
+          </article>
+          <figure class="featured-image-3">
+              <img src="/img/moxie.jpeg " alt="Moxie">
+           </figure>
+          
+          <article class="article article-3">
+            <h2>Moxie</h2>
+            <p>The Mars Oxygen In-Situ Resource Utilization Experiment, or MOXIE, is helping NASA prepare for human exploration of Mars. MOXIE will test a way for future explorers to produce oxygen from the Martian atmosphere for burning fuel and breathing.</p>
+          </article>
+          <figure class="featured-image-4">
+              <img src="/img/marsrover.jpeg" alt="mars rover">
+           </figure>
+          
+          <article class="article article-4">
+            <h2>Mars Persevereance Rover</h2>
+            <p>Perseverance, nicknamed Percy,is a car-sized Mars rover designed to explore the Jezero crater on Mars as part of NASA's Mars 2020 mission. It was manufactured by the Jet Propulsion Laboratory and launched on 30 July 2020, at 11:50 UTC. </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="last-section">
+        <div class="last-section-container">
+        <div id="magic">
+          
+        </div>
+<div class="playground">
+  <div class="bottomPosition">
+     <a href="#" target="_blank"><svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 278.8 278.8"><circle fill="#000205" cx="139.4" cy="139.4" r="139.4"/><g fill="none" stroke="#FFF" stroke-width="6.062" stroke-miterlimit="10"><path d="M214 183.4l-74.6 43.1-75.5-43.6V95.8l75.5-43.5 75.4 43.5v59.8l-11.3 6.5z"/><path d="M139.4 226.5l-18.8-38.2 18.8 10.8 75.4-43.5M63.9 95.8l75.3 43.6 75.6-43.6M139.2 139.4v59.7"/></g>
+       </svg></a>
+        <h1 class="special">Tareef <br><span class="minText">Software Engineer</span></h1>
+  </div>
+</div>
+</div>
+      </section>
+
+      <footer id="footerWrapper" class="footer5">
+        <div class="container" style="padding-top: 20px; padding-bottom: 40px;">
+        <div class="row">
+        <div class="col-md-6">
+        <p class="copyright">Made by <span class="green-text">Tareef Iman Azizi</span></p>
+        </div>
+                <div class="col-md-6">
+                  <ul class="social-icons">
+                    <li><a class="github" href="#" ><i class="fa fa-github"></i></a></li>
+                    <li><a class="twitter" href="#" ><i class="fa fa-twitter"></i></a></li>
+                    <li><a class="instagram" href="#" ><i class="fa fa-instagram"></i></a></li>
+                  </ul>
+        </div>
+        </div>
+        </div>
+        
+          
+        </footer>
+<div class="cursor"></div>
+</body>
+<script type="x-shader/x-vertex" id="vertexshader">
+
+  attribute float size;
+  attribute vec3 customColor;
+  varying vec3 vColor;
+
+  void main() {
+
+    vColor = customColor;
+    vec4 mvPosition = modelViewMatrix * vec4( position, 1.0 );
+    gl_PointSize = size * ( 300.0 / -mvPosition.z );
+    gl_Position = projectionMatrix * mvPosition;
+
+  }
+
+</script>
+<script type="x-shader/x-fragment" id="fragmentshader">
+
+ uniform vec3 color;
+ uniform sampler2D pointTexture;
+
+ varying vec3 vColor;
+
+ void main() {
+
+   gl_FragColor = vec4( color * vColor, 1.0 );
+   gl_FragColor = gl_FragColor * texture2D( pointTexture, gl_PointCoord );
+
+ }
+
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js" integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/CSSRulePlugin.min.js" integrity="sha512-2+BGFUqT8mzxE2ifxQK7kcEhOeHaO5EOrUgRIUJ9+HoIw8zQHI+HvnVrgGjwW0qL5dpGv8ao2oZlBS7IvvCuhA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+  let tl = gsap.timeline({defaults: {ease: "power4.inOut", duration: 2}})
+        let flagPoles = CSSRulePlugin.getRule(".card:before");
+
+        tl.to('h1', { 'clip-path': 'polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)', opacity: 1, y: 0, duration: 1.5})
+</script>
+<script>
+  const updateProperties = (elem, state) => {
+  elem.style.setProperty('--x', `${state.x}px`)
+  elem.style.setProperty('--y', `${state.y}px`)
+  elem.style.setProperty('--width', `${state.width}px`)
+  elem.style.setProperty('--height', `${state.height}px`)
+  elem.style.setProperty('--radius', state.radius)
+  elem.style.setProperty('--scale', state.scale)
+}
+
+document.querySelectorAll('.cursor').forEach(cursor => {
+  let onElement
+
+  const createState = e => {
+    const defaultState = {
+      x: e.clientX,
+      y: e.clientY,
+      width: 40,
+      height: 40,
+      radius: '50%'
+    }
+
+    const computedState = {}
+
+    if (onElement != null) {
+      const { top, left, width, height } = onElement.getBoundingClientRect()
+      const radius = window.getComputedStyle(onElement).borderTopLeftRadius
+
+      computedState.x = left + width / 2
+      computedState.y = top + height / 2
+      computedState.width = width
+      computedState.height = height
+      computedState.radius = radius
+    }
+
+    return {
+      ...defaultState,
+      ...computedState
+    }
+  }
+
+  document.addEventListener('mousemove', e => {
+    const state = createState(e)
+    updateProperties(cursor, state)
+  })
+
+  document.querySelectorAll('a, button').forEach(elem => {
+    elem.addEventListener('mouseenter', () => (onElement = elem))
+    elem.addEventListener('mouseleave', () => (onElement = undefined))
+  })
+})
+
+</script>
+</html>
