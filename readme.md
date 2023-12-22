@@ -1,5 +1,6 @@
 Practicing with HTML, CSS , THREEJS
-- Intrigued with space travel
+Hosted on: https://resonant-pony-a373cb.netlify.app/
+- Intrigued with space travel, practicing css 
 
 ``` bash
 # Install dependencies (only the first time)
